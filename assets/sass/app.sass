@@ -35,6 +35,9 @@ header
     display: flex
     justify-content: space-between
     align-items: center
+    padding: 1.5em 1.8em
+    h5
+        font-size: 22px
 
 .hero
     grid-area: 2 / 1 / 3 / 3
@@ -93,7 +96,21 @@ header
 
 .offices
     grid-area: 3 / 1 / 4 / 2
-    // background: rgba(purple, 0.15)
+    // overflow: hidden
+    position: relative
+    .items
+        display: flex
+        flex-wrap: wrap
+        background: blue
+        height: 100%
+        max-width: 100%
+        .item
+            background: red
+            width: 110px
+            // max-height: 90%
+            // height: auto
+            transform: rotate(-90deg)
+            // height: 100%
 
 .process
     grid-area: 3 / 2 / 4 / 4
