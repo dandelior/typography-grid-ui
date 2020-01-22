@@ -35,7 +35,7 @@ header
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 1.5em 1.8em
+    padding: 1.5em 2em
     h5
         font-size: 22px
 
@@ -58,6 +58,7 @@ header
         top: 20%
         right: 0
         left: 0
+        font-weight: 600
     .image-item
         position: absolute
         z-index: 2
@@ -93,15 +94,18 @@ header
 .options
     grid-area: 1 / 5 / 3 / 6
     // background: rgba(blue, 0.1)
+    padding: 1.5em 1.8em
 
 .offices
     grid-area: 3 / 1 / 4 / 2
     // overflow: hidden
     position: relative
+    box-sizing: border-box
     .items
         display: flex
         flex-wrap: wrap
         background: blue
+        box-sizing: border-box
         height: 100%
         max-width: 100%
         .item
@@ -111,16 +115,42 @@ header
             // height: auto
             transform: rotate(-90deg)
             // height: 100%
+            h6, p
+                margin: 0
+                padding: 0
 
 .process
     grid-area: 3 / 2 / 4 / 4
     background: #BEC7B6
+    padding: 1.5em 1.8em
+    // box-sizing: border-box
+    // border-top: solid 2px black
+    .title
+        box-sizing: border-box
+        border-top: solid 2px black
+        padding-top: 0.5em
+        p
+            letter-spacing: 2px
+    .info
+        display: flex
+        box-sizing: border-box
+        flex-wrap: wrap
+        // align-content: stretch
+        align-items: flex-end
+        height: 100%
+        margin: 0
+        padding: 0 
+        h2, p
+            margin: 0
+            padding: 0
 
 .variety-item
     grid-area: 3 / 4 / 4 / 5
     // background: rgba(green, 0.15)
+    padding: 1.5em 1.8em
 
 .next
     grid-area: 3 / 5 / 4 / 6
     background: #E6C04B
     // background: rgba(green, 0.15)
+    padding: 1.5em 1.8em
