@@ -2,6 +2,11 @@
     margin: 0
     padding: 0
 
+body
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
 // Fonts
 @font-face
   font-family: 'Bebas Neue'
@@ -27,8 +32,9 @@
     grid-template-columns: 0.9fr 5.5fr 0.5fr 3fr 1.5fr
     grid-template-rows: 0.7fr 4.1fr 3.5fr
     position: relative
-    width: 100vw
-    height: 100vh
+    box-sizing: border-box
+    width: 100%
+    height: 100%
 
 header
     grid-area: 1 / 1 / 2 / 3
@@ -93,50 +99,51 @@ header
 
 .options
     grid-area: 1 / 5 / 3 / 6
-    // background: rgba(blue, 0.1)
     padding: 1.5em 1.8em
 
 .offices
     grid-area: 3 / 1 / 4 / 2
-    // overflow: hidden
-    // display: block
-    position: relative
     box-sizing: border-box
-    align-self: center
-    // justify-self: space-between
     background: white
+    position: relative
     .items
-        background: rgba(blue, 0.2)
+        // background: rgba(blue, 0.2)
         display: flex
+        flex-wrap: nowrap
         box-sizing: border-box
-        // height: 100%
-        // max-width: 100%
-        width: 300px
-        // min-width: 120%
         position: absolute
-        // top: 151px
-        // bottom: 0
-        // top: 0
-        // left: 0
-        // right: 0
-        // bottom: 0
         margin: auto
-        // right: 0
+        width: 38vh
+        height: 4vw
         transform: rotate(-90deg)
-        transform-origin: left top
-        margin: auto
+        -webkit-transform-origin: center
+        -moz-transform-origin: center
+        -ms-transform-origin: center
+        -o-transform-origin: center
+        transform-origin: center
+        // bottom: 16vh
+        // left: -7vw
+        // bottom: 0
+        // right: 0
+        top: 0
+        left: -80%
+        right: 0
+        bottom: 0
         .item
-            background: rgba(red, 0.1)
+            // background: rgba(red, 0.1)
             width: 100%
             display: inline-block
-            // width: 40%
-            // max-height: 90%
-            // height: auto
-            // transform: rotate(-90deg)
-            // height: 100%
+            // position: absolute
             h6, p
                 margin: 0
                 padding: 0
+            h6
+                font-size: 14px
+                margin-bottom: 6px
+            p
+                font-family: 'Roboto', sans-serif
+                font-size: 10px
+                line-height: 120%
 
 .process
     grid-area: 3 / 2 / 4 / 4
@@ -152,7 +159,7 @@ header
             letter-spacing: 2px
             font-family: 'Roboto', sans-serif
             text-transform: uppercase
-            font-size: 10px
+            font-size: 12px
             // font-weight: 600
     .info
         display: flex
